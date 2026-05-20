@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Main  {
+    public static void main(String[] args) {
+        ArrayList<String> produtos = new ArrayList<>();
+        produtos.add("Arroz");
+        produtos.add("Feijão");
+        produtos.add("Leite");
+        produtos.add("Pão");
+        produtos.add("Macarrão");
+        System.out.println("Produtos cadastrados:");
+        for (String produto : produtos) {
+            System.out.println("- " + produto);
+        }
+        System.out.println("\nQuantidade total de produtos: " + produtos.size());
+    }
+}
