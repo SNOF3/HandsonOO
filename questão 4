@@ -1,0 +1,23 @@
+import java.util.HashMap;
+
+public class CadastroAlunos {
+    public static void main(String[] args) {
+
+        HashMap<Integer, String> alunos = new HashMap<>();
+
+        alunos.put(101, "João");
+        alunos.put(102, "Maria");
+        alunos.put(103, "Pedro");
+
+        System.out.println("Alunos cadastrados:");
+        System.out.println(alunos);
+
+        System.out.println("\nAluno da matrícula 102:");
+        System.out.println(alunos.get(102));
+
+        alunos.remove(103);
+
+        System.out.println("\nLista após remover matrícula 103:");
+        System.out.println(alunos);
+    }
+}
